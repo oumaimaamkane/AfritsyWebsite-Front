@@ -1,5 +1,5 @@
 import React, { useState,useEffect  } from 'react';
-import './CarouselHeroStyle.css'; // Ensure you create a CSS file or use inline styles
+import './CarouselHeroStyle.css'; 
 
 const CarouselHero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -13,9 +13,9 @@ const CarouselHero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 3000); // Change slide every 3 seconds
+    }, 3000); 
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval); 
   }, [items.length]);
 
   const prevSlide = () => {

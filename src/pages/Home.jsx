@@ -7,9 +7,10 @@ function Home() {
   return (
     <>
       <Header />
-      <div style={{ margin: '110px' }}> 
+      <div className="carousel-container"> 
         <CarouselHero />
       </div>
+      
     </>
   )
 }
