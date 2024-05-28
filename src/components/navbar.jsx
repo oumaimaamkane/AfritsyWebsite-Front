@@ -27,10 +27,10 @@ function Navbar() {
               <div className="hidden lg:ml-6 lg:block lg:space-x-4">
                 <div className="flex">
                   <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-6 m-3 text-sm font-medium text-white">Dashboard</a>
-                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Service</a>
-                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Member</a>
-                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Country</a>
-                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Project</a>
+                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Services</a>
+                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Members</a>
+                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Countries</a>
+                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Projects</a>
                 </div>
               </div>
             </div>
