@@ -90,7 +90,7 @@ const CarouselHero = () => {
             <div className={`absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center ${textColor}`}>
               <h1 className="text-3xl font-bold mb-4">{item.title}</h1>
               <p className="text-lg text-center mb-6">{item.description}</p>
-              <button className="bg-blue-500 text-white px-4 py-2">{item.buttonText}</button>
+              <button className="bg-orange-500 text-white px-4 py-2">{item.buttonText}</button>
             </div>
           </div>
         ))}
