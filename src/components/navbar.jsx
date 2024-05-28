@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Logo from '../assets/afritsy.jpg';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setOpen(!open);
+  };
+
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate('/login');
   };
 
   return (
@@ -22,7 +29,7 @@ function Navbar() {
                   <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-6 m-3 text-sm font-medium text-white">Dashboard</a>
                   <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Service</a>
                   <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Member</a>
-                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Contry</a>
+                  <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Country</a>
                   <a href="#" className="hover:bg-orange-600 bg-black bg-opacity-25 rounded-md py-2 px-3 m-3 text-sm font-medium text-white">Project</a>
                 </div>
               </div>
@@ -68,7 +75,7 @@ function Navbar() {
                     <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button">
                       <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
                       <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
-                      <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+                      <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" onClick={handleLogout}>Sign out</a>
                     </div>
                   )}
                 </div>
@@ -97,7 +104,7 @@ function Navbar() {
               <div className="mt-3 px-2">
                 <a href="#" className="block rounded-md py-2 px-3 text-base font-medium text-orange-200 hover:bg-orange-600 hover:text-white">Your Profile</a>
                 <a href="#" className="block rounded-md py-2 px-3 text-base font-medium text-orange-200 hover:bg-orange-600 hover:text-white">Settings</a>
-                <a href="#" className="block rounded-md py-2 px-3 text-base font-medium text-orange-200 hover:bg-orange-600 hover:text-white">Sign out</a>
+                <a href="#" className="block rounded-md py-2 px-3 text-base font-medium text-orange-200 hover:bg-orange-600 hover:text-white" onClick={handleLogout}>Sign out</a>
               </div>
             </div>
           </div>
