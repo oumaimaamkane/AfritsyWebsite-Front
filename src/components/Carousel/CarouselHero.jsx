@@ -3,7 +3,7 @@ import './CarouselHeroStyle.css';
 
 const CarouselHero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [textColor, setTextColor] = useState('text-white'); 
+  const [textColor, setTextColor] = useState('text-white'); // Default text color
   const items = [
     { src: "/images/image1.webp", alt: "Slide 1", title: "Title for Slide 1", description: "Description for Slide 1", buttonText: "Button 1" },
     { src: "/images/image2.jpg", alt: "Slide 2", title: "Title for Slide 2", description: "Description for Slide 2", buttonText: "Button 2" },
@@ -58,10 +58,10 @@ const CarouselHero = () => {
     brightness = brightness / (img.width * img.height);
     if (brightness < 127.5) {
       // If the image is dark, set text color to white
-      setTextColor('text-white');
+      setTextColor('text-black');
     } else {
       // If the image is light, set text color to black
-      setTextColor('text-black');
+      setTextColor('text-white');
     }
   };
 
@@ -86,12 +86,15 @@ const CarouselHero = () => {
             className={`absolute w-full h-full transition-opacity duration-700 ease-in-out ${index === activeIndex ? 'opacity-100' : 'opacity-0'}`}
             data-carousel-item
           >
-            <img ref={imageRef} src={item.src} alt={item.alt} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
+            <div className="absolute w-full h-full bg-orange-500 opacity-50">
+              <img ref={imageRef} src={item.src} alt={item.alt} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
+            </div>
             <div className={`absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center ${textColor}`}>
               <h1 className="text-3xl font-bold mb-4">{item.title}</h1>
               <p className="text-lg text-center mb-6">{item.description}</p>
-              <button className="bg-orange-500 text-white px-4 py-2">{item.buttonText}</button>
+              <button className="text-white px-4 py-2" style={{ background: '#FFB600' }}>{item.buttonText}</button>
             </div>
+
           </div>
         ))}
       </div>
