@@ -1,6 +1,6 @@
 import React from 'react';
 
-function HomePageSection1() {
+function About() {
   return (
     <>
       <section className="text-gray-600 body-font">
@@ -47,4 +47,4 @@ function HomePageSection1() {
   );
 }
 
-export default HomePageSection1;
+export default About;

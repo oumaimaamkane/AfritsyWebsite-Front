@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function HomePageService() {
+function Service() {
   const settings = {
     dots: true,
     infinite: true,
@@ -74,4 +74,4 @@ function HomePageService() {
   );
 }
 
-export default HomePageService;
+export default Service;
