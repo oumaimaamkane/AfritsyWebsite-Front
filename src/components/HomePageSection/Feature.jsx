@@ -39,7 +39,7 @@ function CenterMode() {
 
     return (
         <div className="slider-container">
-            <div className="flex flex-col">
+            <div className="flex flex-col p-8" style={{ background: '#F8F8F8' }}>
                 <Slider {...settings}>
                     <div className="flex justify-center items-center border border-gray-300 p-4">
                         <div className="flex flex-col items-center text-center">
