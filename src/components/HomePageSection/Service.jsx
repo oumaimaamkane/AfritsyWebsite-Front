@@ -49,11 +49,12 @@ function Service() {
 
   return (
     <section className="text-gray-700 body-font mt-10" style={{ background: '#F8F8F8' }}>
+
       <div className="flex flex-col items-center text-gray-800 text-center pt-16">
         <img src="../../images/Border.png" alt="border" className="my-4" />
         <h1 className="my-4 text-3xl font-bold text-black">OUR SERVICES</h1>
-        <p className="leading-relaxed text-black my-4 mb-8">Always dedicated and devoted</p>
-        <img src="../../images/HorizontalBorder.png" alt="border" className="my-4" />
+        <p className="leading-relaxed text-black mb-3">Always dedicated and devoted</p>
+        <img src="../../images/HorizontalBorder.png" alt="border" />
       </div>
 
       <div className="container px-5 py-12 mx-auto">

@@ -52,6 +52,7 @@ function CenterMode() {
                             <p>Our products are secure and private out-of-the-box</p>
                         </div>
                     </div>
+                    
 
                     <div className="flex justify-center items-center border border-gray-300 p-4">
                         <div className="flex flex-col items-center text-center">
