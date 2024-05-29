@@ -5,6 +5,7 @@ import '../components/Carousel/CarouselHeroStyle.css'
 import About from '../components/HomePageSection/About'
 import Service from '../components/HomePageSection/Service'
 import Pays from '../components/HomePageSection/Pays'
+import Feature from '../components/HomePageSection/Feature'
 import Footer from '../components/Footer'
 
 
@@ -19,6 +20,7 @@ function Home() {
       <About />
       <Service />
       <Pays />
+      <Feature />
 
       <Footer />
     </>
