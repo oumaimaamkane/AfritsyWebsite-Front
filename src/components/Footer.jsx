@@ -4,7 +4,7 @@ import Logo from '../assets/LOGO.png';
 function Footer() {
     return (
         <>
-            <section className="pt-16 pb-10 bg-white-900">
+            <section className="pb-10 bg-white-900">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
                     <div className="">
                         <div className="flex flex-col-reverse items-center justify-between gap-8">
