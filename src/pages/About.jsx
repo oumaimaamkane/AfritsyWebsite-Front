@@ -3,6 +3,8 @@ import Header from '../components/header/Header'
 import Footer from '../components/Footer'
 import Hero from '../components/AboutPageSections/Hero'
 import Benefices from '../components/AboutPageSections/Benefices'
+import Story from '../components/AboutPageSections/Story'
+import End from '../components/AboutPageSections/End'
 
 function About() {
   return (
@@ -12,6 +14,8 @@ function About() {
           <Hero />
         </div>
         <Benefices />
+        <Story />
+        <End />
       <Footer />
     </>
   )
