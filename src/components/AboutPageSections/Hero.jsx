@@ -9,7 +9,7 @@ function Hero() {
                 <p className="mt-4 text-base text-[#666] leading-relaxed">Embark on a gastronomic journey with our curated dishes, delivered promptly to your doorstep. Elevate your dining experience today
                     Embark on a gastronomic journey with our curated dishes, delivered promptly to your doorstep. Elevate your dining experience today.</p>
                 <div className="mt-8 flex max-sm:flex-col sm:space-x-4 max-sm:space-y-6 justify-center">
-                    <a href="javascript:void(0);" className="px-6 py-3 text-base font-semibold text-white bg-[#FFB600] rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#f032e6] focus:outline-none focus:ring-opacity-50">Explore Our Menu</a>
+                    <a href="/project" className="px-6 py-3 text-base font-semibold text-white bg-[#FFB600] rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#f032e6] focus:outline-none focus:ring-opacity-50">Explore Our Menu</a>
                 </div>
             </div>
             <div className="md:h-[450px] transform transition-transform duration-500 hover:scale-105">
