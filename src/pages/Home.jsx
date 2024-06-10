@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from '../components/header/Header'
-import CarouselHero from '../components/Carousel/CarouselHero'
-import '../components/Carousel/CarouselHeroStyle.css'
+import Header from '../components/Header'
+import Hero from '../components/HomePageSection/Hero'
 import About from '../components/HomePageSection/About'
 import Service from '../components/HomePageSection/Service'
 import Pays from '../components/HomePageSection/Pays'
@@ -10,20 +9,17 @@ import Clients from '../components/HomePageSection/Clients'
 import Footer from '../components/Footer'
 
 
-
-
 function Home() {
   return (
     <>
       <Header />
-      <div className="carousel-container">
-        <CarouselHero />
-      </div>
-      <About />
-      <Service />
-      <Pays />
-      <Feature />
-      <Clients />
+        
+        <Hero />
+        <About />
+        <Service />
+        <Pays />
+        <Feature />
+        <Clients />
       <Footer />
     </>
   )
