@@ -4,11 +4,13 @@ import Slider from "react-slick";
 function CenterMode() {
     var settings = {
         dots: true,
-        infinite: false,
-        speed: 500,
+        infinite: true,
+        speed: 2000,
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,
+        autoplay: true, 
+        autoplaySpeed: 4000, 
         responsive: [
             {
                 breakpoint: 1024,
@@ -36,10 +38,10 @@ function CenterMode() {
             }
         ]
     };
-
+    
     return (
         <div className="slider-container">
-            <div className="flex flex-col p-8" style={{ background: '#F8F8F8' }}>
+            <div className="mt-6 flex flex-col p-8 bg-gradient-to-r from-[#EFA300] via-[#3A3B3C] to-[#EFA300]">
                 <Slider {...settings}>
                     <div className="flex justify-center items-center border border-gray-300 p-4">
                         <div className="flex flex-col items-center text-center">
@@ -52,7 +54,6 @@ function CenterMode() {
                             <p>Our products are secure and private out-of-the-box</p>
                         </div>
                     </div>
-                    
 
                     <div className="flex justify-center items-center border border-gray-300 p-4">
                         <div className="flex flex-col items-center text-center">
