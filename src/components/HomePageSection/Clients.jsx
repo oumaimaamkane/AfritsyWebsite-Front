@@ -10,11 +10,31 @@ function Clients() {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            }
+        ]
     };
+
     return (
         <>
-            <div className="flex flex-col items-center text-gray-800 text-center pt-16">
+            <div className="flex flex-col items-center text-gray-800 text-center">
                 <img src="../../images/Border.png" alt="border" className="my-4" />
                 <h1 className="my-4 text-3xl font-bold text-black">HAPPY CLIENTS</h1>
                 <p className="leading-relaxed text-black mb-3">Always dedicated and devoted</p>
@@ -28,7 +48,7 @@ function Clients() {
                 <div className="slider-container m-12">
                     <Slider {...settings}>
                         <div>
-                            <svg width="85" height="24" xmlns="http://www.w3.org/2000/svg" aria-label="Netflix" fill="currentColor">
+                            <svg width="85" height="24" xmlns="http://www.w3.org/2000/svg" aria-label="Netflix" fill="bg-gradient-to-r from-[#EFA300] via-[#FFB600] to-[#242526]">
                                 <path
                                     d="M11.7 22.4c-1.3.3-2.6.3-4 .5l-4-12.5v13L0 24V0h3.4l4.7 13.6V0h3.6v22.4zm7-13.6h4.9v3.7h-4.9v5.6l6.4-.4v3.6l-10 .8V0h10v3.8h-6.3v5zm19.8-5h-3.8V21h-3.6V3.7h-3.7V0h11v3.8zm5.8 4.7h4.9v3.8h-5v8.5h-3.4V0h10v3.8h-6.5v4.7zm12.3 9l6.1.3v3.7L53 21V0h3.6v17.5zm9.2 4.3l3.5.3V0h-3.6v21.8zM85 0l-4.5 11.4L85 24l-4-.7-2.6-7-2.6 6.4-3.9-.5 4.6-11L72.3 0h4l2.3 6.3L81 0H85z">
                                 </path>
