@@ -143,7 +143,7 @@ function Login() {
             )}
             <div className="mb-6">
               <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-[#FFB600] rounded-full hover:bg-opacity-80 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit" 
               >
                 Login
