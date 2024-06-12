@@ -75,6 +75,7 @@ const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(true);  // <-- Added this line
 
   useEffect(() => {
     const token = sessionStorage.getItem('token');
@@ -85,7 +86,10 @@ const AuthProvider = ({ children }) => {
         setEmail(storedEmail);
       }
     }
+    setIsLoading(false);  // <-- Added this line
+
   }, []);
+
 
   const login = (email, token) => {
     setIsLoggedIn(true);
@@ -102,7 +106,7 @@ const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ isLoggedIn, email, login, logout }}>
+    <AuthContext.Provider value={{ isLoggedIn, email, login, logout, isLoading }}>
       {children}
     </AuthContext.Provider>
   );
@@ -111,8 +115,19 @@ const AuthProvider = ({ children }) => {
 const useAuth = () => useContext(AuthContext);
 
 const ProtectedRoute = ({ element }) => {
-  const { isLoggedIn } = useAuth();
+  const { isLoggedIn , isLoading} = useAuth();
+  if (isLoading) {  // <-- Added this condition
+    return <p>Loading...</p>;  // <-- Added this line
+  }
   return isLoggedIn ? element : <Navigate to="/login" />;
+};
+
+const LoginRoute = ({ element }) => {
+  const { isLoggedIn, isLoading } = useAuth();
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+  return isLoggedIn ? <Navigate to="/dashboard" /> : element;
 };
 
 function App() {
@@ -126,7 +141,9 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/SinglePageProject" element={<SinglePageProject />} />
-          <Route path="/login" element={<Login />} />
+          
+          <Route path="/login" element={<LoginRoute element={<Login />} />} />  
+
           <Route path="*" element={<NotFound />} />
 
           {/* Private Routes */}
