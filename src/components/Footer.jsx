@@ -4,7 +4,7 @@ import Logo from '../assets/LOGO.png';
 function Footer() {
     return (
         <>
-            <section className="pb-10" style={{ background: '#FFEEC2' }}>
+            <section className="pb-10 bg-[#FFEEC2]">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
                     <div className="">
                         <div className="flex flex-col-reverse items-center justify-between gap-8">
@@ -15,10 +15,10 @@ function Footer() {
                             <p className="mb-3 leading-relaxed text-center m-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula </p>
                         </div>
                         <div className="py-10 flex flex-col lg:flex-row justify-between gap-8">
-                            <div className="w-full max-lg:mx-auto flex flex-col sm:flex-row max-lg:items-center max-lg:justify-between gap-6 md:gap-12 lg:gap-24" style={{ paddingLeft: '90px' }}>
+                            <div className="w-full max-lg:mx-auto flex flex-col sm:flex-row max-lg:items-center max-lg:justify-between gap-6 md:gap-12 lg:gap-24">
                                 <div className="">
                                     <h6 className="text-lg font-medium text-black mb-7 max-lg:text-center">Get in touch</h6>
-                                    <ul className="flex flex-col max-lg:items-center gap-6">
+                                    <ul className="flex flex-col gap-6">
                                         <li className="text-base font-normal max-lg:text-center text-black flex items-center whitespace-nowrap transition-all duration-300 focus-within:outline-0 focus-within:text-amber-400">
                                             <a href="https://www.google.com/maps/place/30.380281721333553,-9.504695750319959" target="_blank" rel="noopener noreferrer" className="flex items-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 384 512">
@@ -28,7 +28,7 @@ function Footer() {
                                             </a>
                                         </li>
 
-                                        <li className="text-base font-normal max-lg:text-center text-black flex items-center whitespace-nowrap transition-all duration-300 focus-within:outline-0 focus-within:text-amber-400 align-items-center">
+                                        <li className="text-base font-normal max-lg:text-center text-black flex items-center whitespace-nowrap transition-all duration-300 focus-within:outline-0 focus-within:text-amber-400">
                                             <a href="mailto:admin@e-mail.com" className="flex items-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
                                                     <path fill="#000000" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
@@ -47,20 +47,19 @@ function Footer() {
                                         </li>
 
                                     </ul>
-
                                 </div>
-                                <div className="">
+                                <div className="sm:pl-3">
                                     <h6 className="text-lg font-medium text-black mb-7 max-lg:text-center">Pages</h6>
-                                    <ul className="flex flex-col gap-6 max-lg:items-center">
-                                        <li><a href="\" className="text-base font-normal max-lg:text-center text-black whitespace-nowrap transition-all duration-300 hover:text-amber-400 focus-within:outline-0 focus-within:text-amber-400">Home</a></li>
-                                        <li><a href="\about" className="text-base font-normal max-lg:text-center text-black whitespace-nowrap transition-all duration-300 hover:text-amber-400 focus-within:outline-0 focus-within:text-amber-400">About</a></li>
+                                    <ul className="flex flex-col gap-6">
+                                        <li><a href="\" className="text-base font-normal max-lg:text-center text-black flex items-center whitespace-nowrap transition-all duration-300 focus-within:outline-0 focus-within:text-amber-400">Home</a></li>
+                                        <li><a href="\about" className="text-base font-normal max-lg:text-center text-black flex items-center whitespace-nowrap transition-all duration-300 focus-within:outline-0 focus-within:text-amber-400">About</a></li>
                                         <li><a href="\project" className="text-base font-normal max-lg:text-center text-black whitespace-nowrap transition-all duration-300 hover:text-amber-400 focus-within:outline-0 focus-within:text-amber-400">Projects</a></li>
                                         <li><a href="\contact" className="text-base font-normal max-lg:text-center text-black whitespace-nowrap transition-all duration-300 hover:text-amber-400 focus-within:outline-0 focus-within:text-amber-400">Contact</a></li>
                                     </ul>
                                 </div>
                                 <div className="">
                                     <h6 className="text-lg font-medium text-black mb-7 max-lg:text-center">Our Services</h6>
-                                    <ul className="flex flex-col gap-6 max-lg:items-center">
+                                    <ul className="flex flex-col gap-6">
                                         <li><a href="#" className="text-base font-normal text-black whitespace-nowrap transition-all duration-300 hover:text-amber-400 focus-within:outline-0 focus-within:text-amber-400">FAQs</a></li>
                                         <li><a href="#" className="text-base font-normal text-black whitespace-nowrap transition-all duration-300 hover:text-amber-400 focus-within:outline-0 focus-within:text-amber-400">Quick Start</a></li>
                                         <li><a href="#" className="text-base font-normal text-black whitespace-nowrap transition-all duration-300 hover:text-amber-400 focus-within:outline-0 focus-within:text-amber-400">Documentation</a></li>
